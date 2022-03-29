@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/favourite"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="favourite"
+            android:iconTint="@android:color/white"
+            />
+        <item
+            android:id="@+id/nav_my_books"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="my Books"
+            android:iconTint="@android:color/white"
+            />
+        <item
+            android:id="@+id/nav_by_search"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="search "
+            android:iconTint="@android:color/white"
+            />
+
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/ic_baseline_edit"
+            android:title="Edit profile"
+        />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="logout"
+            android:iconTint="@android:color/white"
+            />
+    </group>
+</menu>

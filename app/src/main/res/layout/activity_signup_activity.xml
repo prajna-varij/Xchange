@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup_activity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageViewsubg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/subg"
+            android:background="@drawable/ic_rectangle_7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageViewtopsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/topsu"
+            android:background="@drawable/topsu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
+            />
+
+        <ImageView
+            android:id="@+id/imageViewbosu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bosu2"
+            android:src="@drawable/bosu2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageheadsu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_rounded_rectangle"
+            android:background="@drawable/ic_rounded_rectangle"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.775"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageheadsu"
+            app:layout_constraintLeft_toLeftOf="@+id/imageheadsu"
+            app:layout_constraintRight_toRightOf="@+id/imageheadsu"
+            app:layout_constraintTop_toTopOf="@+id/imageheadsu"
+            app:layout_constraintVertical_bias="0.25"
+            tools:ignore="HardcodedText,UnknownId" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintLeft_toLeftOf="@+id/imageheadsu"
+            app:layout_constraintRight_toRightOf="@+id/imageheadsu"
+            app:layout_constraintTop_toBottomOf="@+id/imageheadsu"
+            app:layout_constraintVertical_bias="0.1"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="Full name"
+            android:textColor="@android:color/white"
+
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintLeft_toLeftOf="@+id/name"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="HardcodedText"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail id"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="@+id/name"
+            app:layout_constraintRight_toRightOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/editname"
+            app:layout_constraintVertical_bias="0.01"
+            tools:ignore="HardcodedText" />
+
+
+        <EditText
+            android:id="@+id/editemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="sample@abc.xyz"
+            android:textColor="@android:color/white"
+            android:inputType="textEmailAddress"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="@+id/editname"
+            app:layout_constraintRight_toRightOf="@id/editname"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0."
+            app:layout_constraintLeft_toLeftOf="@+id/name"
+            app:layout_constraintRight_toRightOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/editemail"
+            app:layout_constraintVertical_bias="0.01"
+            tools:ignore="HardcodedText" />
+
+
+        <EditText
+            android:id="@+id/editnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="9123456789"
+            android:textColor="@android:color/white"
+            android:inputType="number"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="@+id/editname"
+            app:layout_constraintRight_toRightOf="@id/editname"
+            app:layout_constraintTop_toBottomOf="@id/number"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="@+id/name"
+            app:layout_constraintRight_toRightOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/editnumber"
+            app:layout_constraintVertical_bias="0.01"
+            tools:ignore="HardcodedText" />
+
+
+        <EditText
+            android:id="@+id/editdob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="DD-MM-YYYY"
+            android:textColor="@android:color/white"
+            android:inputType="date"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toLeftOf="@+id/editname"
+            app:layout_constraintRight_toRightOf="@id/editname"
+            app:layout_constraintTop_toBottomOf="@id/dob"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buco"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corners_black"
+            android:text="continue"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editdob"
+            app:layout_constraintVertical_bias="0.25"
+            tools:ignore="HardcodedText,InOrMmUsage" />
+
+        <ImageView
+            android:id="@+id/imageuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user_alt"
+            app:layout_constraintBottom_toBottomOf="@+id/editname"
+            app:layout_constraintTop_toTopOf="@+id/editname"
+            app:layout_constraintRight_toRightOf="@+id/editname"
+            tools:layout_editor_absoluteX="248dp"
+            tools:layout_editor_absoluteY="188dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imagemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mail"
+            app:layout_constraintBottom_toBottomOf="@+id/editemail"
+            app:layout_constraintTop_toTopOf="@+id/editemail"
+            app:layout_constraintRight_toRightOf="@+id/imageuser"
+            app:layout_constraintLeft_toLeftOf="@+id/imageuser"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="302dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imagenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/editnumber"
+            app:layout_constraintTop_toTopOf="@+id/editnumber"
+            app:layout_constraintRight_toRightOf="@+id/imagemail"
+            app:layout_constraintLeft_toLeftOf="@+id/imagemail"
+            android:src="@drawable/ic_phone_alt"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="472dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imagecal"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/editdob"
+            app:layout_constraintTop_toTopOf="@+id/editdob"
+            app:layout_constraintRight_toRightOf="@+id/imagenum"
+            app:layout_constraintLeft_toLeftOf="@+id/imagenum"
+            android:src="@drawable/ic_birthday_cake"
+            tools:layout_editor_absoluteX="259dp"
+            tools:layout_editor_absoluteY="395dp"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
